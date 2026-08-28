@@ -1,0 +1,39 @@
+            //criando o objeto (instanciação)
+            Carro MeuFusca = new Carro();
+
+            MeuFusca.Marca = "Volkswagen";
+            MeuFusca.Modelo = "Fusca";
+            MeuFusca.Ano = 1975;
+            MeuFusca.Cor = "Azul";
+
+            Carro CarroVizinho = new Carro();
+
+            CarroVizinho.Marca = "Fiat";
+            CarroVizinho.Modelo = "Uno";
+            CarroVizinho.Ano = 2010;
+            CarroVizinho.Cor = "Prata";
+
+            Console.WriteLine("Informações do carro do vizinho:");
+            CarroVizinho.ExibirInformacoes();
+
+            Console.WriteLine("Informações do meu carro:");
+            MeuFusca.ExibirInformacoes();
+
+            //exercicio 1
+
+            Produto Caneta = new Produto();
+            Produto Caderno = new Produto();
+
+            Caneta.Nome = "Bic 2.0";
+            Caneta.Preco = 3.99;
+            Caneta.QuantidadeEstoque = 30;
+
+            Console.WriteLine("Informações da caneta:");
+            Caneta.ExibirInformacoesProduto();
+
+            Caderno.Nome = "Surfista";
+            Caderno.Preco = 40.89;
+            Caderno.QuantidadeEstoque = 122;
+
+            Console.WriteLine("Informações do caderno:");
+            Caderno.ExibirInformacoesProduto();

@@ -1,0 +1,69 @@
+            //criando o objeto (instanciação)
+            Carro MeuFusca = new Carro();
+
+            MeuFusca.Marca = "Volkswagen";
+            MeuFusca.Modelo = "Fusca";
+            MeuFusca.Ano = 1975;
+            MeuFusca.Cor = "Azul";
+
+            Carro CarroVizinho = new Carro();
+
+            CarroVizinho.Marca = "Fiat";
+            CarroVizinho.Modelo = "Uno";
+            CarroVizinho.Ano = 2010;
+            CarroVizinho.Cor = "Prata";
+
+            Console.WriteLine("Informações do carro do vizinho:");
+            CarroVizinho.ExibirInformacoes();
+
+            Console.WriteLine("Informações do meu carro:");
+            MeuFusca.ExibirInformacoes();
+
+            //exercicio 1
+
+            Produto Caneta = new Produto();
+            Produto Caderno = new Produto();
+
+            Caneta.Nome = "Bic 2.0";
+            Caneta.Preco = 3.99;
+            Caneta.QuantidadeEstoque = 30;
+
+            Console.WriteLine("Informações da caneta:");
+            Caneta.ExibirInformacoesProduto();
+
+            Caderno.Nome = "Surfista";
+            Caderno.Preco = 40.89;
+            Caderno.QuantidadeEstoque = 122;
+
+            Console.WriteLine("Informações do caderno:");
+            Caderno.ExibirInformacoesProduto();
+
+            //exercicio 2
+
+            Aluno Aluno = new Aluno();
+
+            Aluno.Nome = "João";
+            Aluno.Matricula = 3040;
+            Aluno.Nota1 = 9.8;
+            Aluno.Nota2 = 8.5;
+            Aluno.CalcularMedia();
+
+            Console.WriteLine("Informações do aluno");
+            Aluno.ExibirInformacoes();
+
+            //exercicio 3
+
+            ContaBancaria ContaNova = new ContaBancaria();
+            ContaNova.Titular = "João";
+            ContaNova.NumeroConta = 4090;
+            ContaNova.Saldo = 300;
+            Console.WriteLine($"O saldo inical é: {ContaNova.Saldo}");
+
+            Console.WriteLine("Depositando 1000 reais");
+            ContaNova.Depositar(1000);
+            Console.WriteLine($"Novo saldo {ContaNova.Saldo}");
+
+            Console.WriteLine("Sacando 400 reais.");
+            ContaNova.Sacar(400);
+
+            
