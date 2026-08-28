@@ -43,6 +43,59 @@
 
             Console.WriteLine("Informações do caderno:");
             Caderno.ExibirInformacoesProduto();
+
+            //exercicio 2
+
+            Aluno Aluno = new Aluno();
+
+            Aluno.Nome = "João";
+            Aluno.Matricula = 3040;
+            Aluno.Nota1 = 9.8;
+            Aluno.Nota2 = 8.5;
+            Aluno.CalcularMedia();
+
+            Console.WriteLine("Informações do aluno");
+            Aluno.ExibirInformacoes();
+
+            //exercicio 3
+
+            ContaBancaria ContaNova = new ContaBancaria();
+            ContaNova.Titular = "João";
+            ContaNova.NumeroConta = 4090;
+            ContaNova.Saldo = 300;
+            Console.WriteLine($"O saldo inical é: {ContaNova.Saldo}");
+
+            Console.WriteLine("Depositando 1000 reais");
+            ContaNova.Depositar(1000);
+            Console.WriteLine($"Novo saldo {ContaNova.Saldo}");
+
+            Console.WriteLine("Sacando 400 reais.");
+            ContaNova.Sacar(400);
+
+            //exercicio 4
+
+            Time Escalacao = new Time();
+
+
+            Jogador Jogador1 = new Jogador();
+            Jogador1.Nome = "José Pereira";
+            Jogador1.Posicao = "Meio";
+            Jogador1.NumeroCamisa = 19;
+            Escalacao.AdicionarJogador(Jogador1);
+
+            Jogador Jogador2 = new Jogador();
+            Jogador2.Nome = "Antônio Freg";
+            Jogador2.Posicao = "Goleiro";
+            Jogador2.NumeroCamisa = 1;
+            Escalacao.AdicionarJogador(Jogador2);
+            
+
+            Jogador Jogador3 = new Jogador();
+            Jogador3.Nome = "Cesar Oliveira Cohen";
+            Jogador3.Posicao = "Ponta direita";
+            Jogador3.NumeroCamisa = 15;
+            Escalacao.AdicionarJogador(Jogador3);
+            Escalacao.ListarJogadores();
         }
     }
 }
